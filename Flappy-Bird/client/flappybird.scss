@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 600px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.gameboard {
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin-top: 50px;
+  // margin-left: 25%;
+  width: 800px;
+  height: 600px;
+}
+
+#gameOverMessage {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#gameOverResult {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#gameOverButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#restartButton,
+#leaderboardButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f86e6e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+#restartButton:hover,
+#leaderboardButton:hover {
+  background-color: #555;
+}
+.level2Message {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  color: white;
+  font-size: 40px;
+}
+
+#leaderboardModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+#leaderboardList table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#leaderboardList th,
+#leaderboardList td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#leaderboardList th {
+  background-color: #f2f2f2;
+}
+
+#leaderboardList td {
+  width: 33.33%;
+}
+
+#leaderboardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restartButtonLeaderboard {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #f86e6e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restartButtonLeaderboard:hover {
+  background-color: #555;
+}
+
+.centered {
+  text-align: center;
+}
+
+// .modal {
+//   display: none;
+//   position: fixed;
+//   z-index: 1;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.4);
+// }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  margin-top: 10%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 600px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+#bird {
+  // position: relative;
+  width: 8%;
+  height: 10%;
+}
+
+// .fullBox {
+//   background-color: rgb(55, 136, 168);
+//   height: 50px;
+//   width: 80px;
+//   top: 20px;
+//   left: 20px;
+//   position: absolute;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+
+//   .score {
+//     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+//       sans-serif;
+//     color: black;
+//     top: 5px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: absolute;
+//   }
+
+//   .black-box {
+//     bottom: 0;
+//     border-radius: 5px 5px 0 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: white;
+//     width: 50px;
+//     height: 25px;
+//     background-color: rgb(68, 152, 197);
+//     position: absolute;
+
+//     // z-index: 10;
+//   }
+// }
+
+.fullBox {
+  background-color: white;
+  height: 50px;
+  width: 80px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  .score {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: black;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .black-box {
+    bottom: 0;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+
+    // z-index: 10;
+  }
+}

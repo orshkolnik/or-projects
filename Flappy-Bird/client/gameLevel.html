@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./dist/index.js" defer></script>
+    <script src="./dist/gameLevel.js" defer></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/starting-machine"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Game Difficulty</title>
+  </head>
+  <body onload="handleGetUser()">
+    <img class="background-image" src="./pictures/flappybird-background.jpg" />
+    <div class="container">
+      <button id="startGameButton" type="button">Start Game</button>
+      <div id="countdown" class="countdown"></div>
+    </div>
+  </body>
+</html>

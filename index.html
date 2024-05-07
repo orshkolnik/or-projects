@@ -1,0 +1,127 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>סקירה אישית</title>
+     <script src="./index.js"></script>
+     <style>
+         .question {
+             font-weight: bold;
+         }
+  
+         .input-field {
+             margin-left: 3px;
+         }
+         ol li {
+             margin-bottom: 10px;
+         }
+     </style>
+ </head>
+ <body dir="rtl">
+    <div id="personalReview">
+            <h1>סקירה אישית</h1>
+            <ol>
+                <li>
+                    <div>
+                        <span class="question">מה הדבר שהכי אהבת לעשות בתור ילדה?</span>
+                    </div>
+                    <div>
+                        <span class="answer">בתור ילדה הכי אהבתי</span>
+                        <input type="text" class="input-field" id="q1" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">לו היית צריכה לבחור דבר אחד שאותו תהיי חייבת לעשות כל החיים, מה היית בוחרת לעשות?</span>
+                    </div>
+                    <div>
+                        <span class="answer">הייתי בוחרת ל</span>
+                        <input type="text" class="input-field" id="q2" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">תארי לך שממחר בבוקר את מקבלת אחת לחודש מליון ₪ לחשבון הבנק שלך עד סוף ימי חייך, במה היית בוחרת לעסוק להמשך חייך?  (כמובן אחרי הטיול בעולם והחופש 😉)</span>
+                    </div>
+                    <div>
+                        <span class="answer">במצב כזה הייתי עוסקת בל</span>
+                        <input type="text" class="input-field" id="q3" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">מהו הדבר הזה שיש לך גם תשוקה מאוד גדולה אליו אבל גם פחד מאוד גדול?</span>
+                    </div>
+                    <div>
+                        <span class="answer">אני מאוד אוהבת אבל גם מפחדת מ </span>
+                        <input type="text" class="input-field" id="q4" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">במה את הכי חזקה וטובה? מה את יודעת לעשות הכי טוב?</span>
+                    </div>
+                    <div>
+                        <span class="answer">אני הכי טובה ב </span>
+                        <input type="text" class="input-field" id="q5" value=""required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">איפה יושב "הפצע" שלך?  מה את חווה שוב ושוב בחיים שלך שמכאיב לך או מפריע לך?</span>
+                    </div>
+                    <div>
+                        <span class="answer">אני מרגישה שכל החיים שלי תמיד </span>
+                        <input type="text" class="input-field" id="q6" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">לו היית יכולה לרפא את אותו כאב שמלווה אותך כל החיים ולעבור שינוי, מה השינוי שהלב שלך מבקש לחוות?</span>
+                    </div>
+                    <div>
+                        <span class="answer">השינוי שהייתי רוצה לחוות הוא להפוך מאחת ש לאחת ש </span>
+                        <input type="text" class="input-field" id="q7" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">הזכרי ביום הכי מוצלח בחיים שלך עד כה, מה היה הרגש הכי דומיננטי שהרגשת שם?</span>
+                    </div>
+                    <div>
+                        <span class="answer">ביום הכי מוצלח שלי אני הרגשתי </span>
+                        <input type="text" class="input-field" id="q8" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">מה את יודעת שאת יכולה לעשות כבר עכשיו כדי להרגיש את הרגש הזה?   גם אם זה בעוצמה קטנה.</span>
+                    </div>
+                    <div>
+                        <span class="answer">כדי להרגיש את זה אני יכולה כבר עכשיו </span>
+                        <input type="text" class="input-field" id="q9" value="" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="question">לו היית פי 100 יותר אמיצה מימה שאת עכשיו ואחת שלא דופקת חשבון לאף אחד, מה היית אומרת לעצמך לעשות כבר היום?  גם אם זה הצעד הכי קטן.</span>
+                    </div>
+                    <div>
+                        <span class="answer">אם הייתי אמיצה פי 100 מימה שאני היום ואחת שלא דופקת חשבון לאף אחד, הייתי כבר עכשיו  אומרת לעצמי </span>
+                        <input type="text" class="input-field" id="q10" value="" required>
+                    </div>
+                </li>
+            </ol>
+            <button onclick="showOutcome(event)" >שלח ותראה לי תוצאות</button>
+    </div>
+    <div id="seedsOfLight" style="display: none;">
+        <h1>סיכום</h1>
+        <span id="inputValue"></span>
+    </div>
+ </body>
+ </html>
+
+
+ 
